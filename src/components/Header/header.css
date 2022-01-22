@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.header {
+    display: flex;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    overflow: hidden;
+    align-items: center;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.head h1 {
+    text-transform: capitalize;
+    font-size: 30px;
+    color: rgb(53, 51, 51);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.menu li {
+    margin: 1rem;
+}
+
+.menu li a {
+    color: rgb(44, 40, 40);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.menu li a:hover {
+    border-bottom: 3px solid #000;
+}
+
+.hamburger-menu {
+    display: flex;
+}
+
+.hamburger-menu .menu {
+    font-size: 30px;
+    color: rgb(73, 71, 71);
+    cursor: pointer;
+}
