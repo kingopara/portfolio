@@ -1,17 +1,37 @@
-import { MenuOutlined } from '@material-ui/icons'
-import React from 'react'
+import { Close, MenuOutlined, WidgetsOutlined } from '@material-ui/icons'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './header.css'
+import mypic from '../../assets/cover/B&WPIC.jpg'
 
 const Header = () => {
+
+    const [active, setActive ] = useState(false)
+
+    const showMenu = () => {
+        setActive(!active)
+    }
+
     return (
         <div className='header'>
-            <nav>
-                <div className='head'>
-                    <h1>Praise Opara</h1>
-                </div>
+            <div className='header-pic'>
+                <img src={mypic} alt='my picture' />
+            </div>
 
-                <ul className='menu'>
+            <div className='web'>
+                <WidgetsOutlined className='web-menu' onClick={showMenu}/>
+            </div>
+
+            <nav>
+                {/* <div className='head'>
+                    <h1>Praise Opara</h1>
+                </div> */}
+
+                <ul className={active ? 'nav-menu active' : 'nav-menu'}>
+
+                    <div className='web-close'>
+                        <Close className='web-menu-close' onClick={showMenu}/>
+                    </div>
                     <li>
                         <Link to='#'>About</Link>
                     </li>
@@ -25,9 +45,9 @@ const Header = () => {
                         <Link to='#'>Resume</Link>
                     </li>
 
-                    <div className="hamburger-menu">
+                    {/* <div className="hamburger-menu">
                         <MenuOutlined className='menu'/>
-                    </div>
+                    </div> */}
                 </ul>
             </nav>
         </div>
