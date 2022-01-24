@@ -2,7 +2,7 @@ import { Close, MenuOutlined, WidgetsOutlined } from '@material-ui/icons'
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './header.css'
-import mypic from '../../assets/cover/B&WPIC.jpg'
+import mypic from '../../assets/cover/cover-img.png'
 
 const Header = () => {
 
