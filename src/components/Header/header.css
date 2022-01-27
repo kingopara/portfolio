@@ -19,7 +19,7 @@
 }
 
 .nav-menu li a {
-    /* color: rgb(44, 40, 40); */
+    color: var(--main-white);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -122,7 +122,7 @@ nav {
         position: absolute;
         right: 2rem;
         top: 1.5rem;
-        /* color: var(--main-white); */
+        color: var(--main-white);
         cursor: pointer;
     }
 
@@ -131,7 +131,7 @@ nav {
     }
 
     .web-close {
-        /* color: var(--main-white); */
+        color: var(--main-white);
         cursor: pointer;
     }
 }
