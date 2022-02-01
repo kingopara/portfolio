@@ -26,9 +26,9 @@ function Home() {
                     </button>
                 </div>
 
-                <div className="home-img">
+                {/* <div className="home-img">
                     <img src={picture} alt="selfie of me" />
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -8,7 +8,7 @@
 :root {
   --main-white: #fff;
   --pink:rgb(218, 129, 129);
-  --glabs-gray: hsla(0, 45%, 98%, 0.379);
+  --glass-gray: hsla(0, 45%, 98%, 0.379);
   --img-back: rgba(0, 0, 0, 0.543), rgba(0, 0, 0, 0.502);
   --glass-white:rgba(106, 101, 101, 0.214), rgba(112, 107, 112, 0.344);
   --glass-secondary: rgb(87, 10, 94), rgb(143, 64, 50);

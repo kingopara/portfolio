@@ -25,6 +25,11 @@
     font-size: 14px;
 }
 
+.header-pic:hover {
+        transition: 350ms;
+        transform: scale(190%);
+    }
+
 /* 
 nav {
     display: flex;
